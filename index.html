@@ -5,58 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survev Form</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
-    <div class="title">
-        <h1 id="title">What do you think of this form?</h1>
-        <p id="description">This is a simple responsive survey form built using HTML and CSS.</p>
-    </div>
-    <div class="form">
-    <form id="survey-form" action="">
-        <label for="fname" id="name-label">Name</label><br>
-        <input type="text" name="fname" id="name" placeholder="Please input your full name" required><br>
-        <label for="femail" id="email-label">Email</label><br>
-        <input type="email" name="femail" id="email" placeholder="Please input your email" required><br>
-        <label for="fnum" id="number-label">Pick a random number!</label><br>
-        <input type="number" name="fnum" id="number" placeholder="Please input a random number, maybe even your lucky number!" min="0" max="100" ><br>
-        <label for="power">If you could pick one, which super power would you choose to have?</label><br>
-        <select name="power" id="dropdown">
-            <option value="flying">Flying</option>
-            <option value="super-speed">Super Speed</option>
-            <option value="underwater">Breath Underwater</option>
-            <option value="super-strength">Super Strength</option>
-            <option value="time-travel">Time Travel</option>
-        </select><br>
-
-        <label for="universe">What comic universe do you enjoy more?</label><br>
-        <input type="radio" name="universe" value="dc" >
-        <label for="universe">DC</label><br>
-        <input type="radio" name="universe" value="marvel" >
-        <label for="marvel">Marvel</label><br>
-
-        <label for="character">Which character(s) do you enjoy watching?</label><br>
-        <input type="checkbox" name="superhero" value="superman">
-        <label for="superhero">Superman</label><br>
-        <input type="checkbox" name="superhero" value="batman">
-        <label for="superhero">Batman</label><br>
-        <input type="checkbox" name="superhero" value="flash">
-        <label for="superhero">The Flash</label><br>
-        <input type="checkbox" name="superhero" value="wonder">
-        <label for="superhero">Wonder Woman</label><br>
-        <input type="checkbox" name="superhero" value="iron">
-        <label for="superhero">Iron Man</label><br>
-        <input type="checkbox" name="superhero" value="spider">
-        <label for="superhero">Spider-man</label><br>
-
-        <label for="feedback">Is there anything I should add into this form?</label><br>
-        <textarea name="feedback" cols="30" rows="10"></textarea><br>
-
-
-
-        <button id="submit">Submit your response 😊</button>
+    <div class="back">
         
-    </form>
-</div>
+    </div>
+    <main>
+        <div class="form">
+            <div class="title">
+                <h1 id="title">What do you think of this form?</h1>
+                <p id="description">This is a simple responsive survey form built using HTML and CSS.</p>
+            </div>
+            
+            <form id="survey-form" action="">
+                <label for="fname" id="name-label">Name</label><br>
+                <input class="input" type="text" name="fname" id="name" placeholder="Please input your full name" required><br>
+                <label for="femail" id="email-label">Email</label><br>
+                <input class="input" type="email" name="femail" id="email" placeholder="Please input your email" required><br>
+                <label for="fnum" id="number-label">Pick a random number!</label><br>
+                <input class="input" type="number" name="fnum" id="number" placeholder="Please input a random number, maybe even your lucky number!" min="0" max="100" ><br>
+                <label for="power">If you could pick one, which super power would you choose to have?</label><br>
+                <select class="input" name="power" id="dropdown" placeholder="Select One">
+                    <option disabled selected value>Select one</option>
+                    <option value="flying">Flying</option>
+                    <option value="super-speed">Super Speed</option>
+                    <option value="underwater">Breathe Underwater</option>
+                    <option value="super-strength">Super Strength</option>
+                    <option value="time-travel">Time Travel</option>
+                </select><br>
+                <div class="radio">
+                    <label for="universe">What comic universe do you enjoy more?</label><br>
+                    <input type="radio" name="universe" value="dc" >
+                    <label for="universe">DC</label><br>
+                    <input type="radio" name="universe" value="marvel" >
+                    <label for="marvel">Marvel</label><br>
+                </div>
+                <div class="checkbox">
+                    <label for="character">Which character(s) do you enjoy watching?</label><br>
+                    <input type="checkbox" name="superhero" value="superman">
+                    <label for="superhero">Superman</label><br>
+                    <input type="checkbox" name="superhero" value="batman">
+                    <label for="superhero">Batman</label><br>
+                    <input type="checkbox" name="superhero" value="flash">
+                    <label for="superhero">The Flash</label><br>
+                    <input type="checkbox" name="superhero" value="wonder">
+                    <label for="superhero">Wonder Woman</label><br>
+                    <input type="checkbox" name="superhero" value="iron">
+                    <label for="superhero">Iron Man</label><br>
+                    <input type="checkbox" name="superhero" value="spider">
+                    <label for="superhero">Spider-man</label><br>
+                </div>
+                <label for="feedback">Is there anything I should add into this form?</label><br>
+                <textarea name="feedback" cols="30" rows="10"></textarea><br>
+
+
+
+                <button id="submit">Submit your response 😊</button>
+                
+            </form>
+        
+        </div>
+    </main>
 <!--https://i.pinimg.com/originals/b6/bc/a9/b6bca984713e9dcd0b9e94bdd40c3261.jpg-->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
